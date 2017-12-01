@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<meta charset="utf-8"/>
+
+<head>
+  <title>Phoenix Cinemas</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+
+  <!-- to use the 'ngRoute' module you need to load the angular-route library. -->
+
+     <script src="js/cinema.js"></script>
+     <link rel="stylesheet" href="css/styles.css">
+
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div class="container-fuild">
+    <div class ="row header">
+    <div class = "col-xs-12">
+     <h1><span class="glyphicon glyphicon-film" style="color:white"></span> Phoenix Cinemas</h1>
+    </div>
+    </div>
+
+
+   <div class="row body">
+
+
+     	 <div class="col-sm-2">
+	       <ul class="nav nav-pills nav-stacked">
+             <li role="presentation"><a href="#home">Home</a></li>
+             <li role="presentation"><a href="#nowshowing">Now Showing</a></li>
+             <li role="presentation"><a href="#comingsoon">Coming Soon</a></li>
+		     <li role="presentation"><a href="#critics">Movie Critics</a></li>
+		     <li role="presentation"><a href="#trailers">Trailers</a></li>
+		    <!-- <li role="presentation"  ><a href="#flimfestival" >Flim Festival</a></li> -->
+            <!-- <li role="presentation"><a href="#showtimes">Show Times</a></li> -->
+           </ul>
+	     </div>
+
+
+
+
+
+		<div class="col-sm-10">
+			<div class="row-sm-10">
+			     <div class="row search">
+			         <div class="col-sm-5">
+                           <img src="images/film.png" alt="imfbesidesearch"  height="100px" />
+
+                           <p></p><a href="#search"><h3>Quick Search!</h3></a> </p>
+                     </div>
+
+                     <div class="col-sm-5">
+                           <img src="images/fav.png" alt="imfbesidefav"  height="100px" />
+
+                           <p></p><a href="#favourites"><h3>Favourite Movies!</h3></a> </p>
+                     </div>
+
+			      </div>
+	          </div>
+	          <hr>
+			  <div class="row-sm-6" id="view">
+                 <div ng-view>
+		         <!-- this is where the content will be displayed... -->
+	             </div>
+			 </div>
+
+
+
+			     <div class="row-sm-12">
+				    <div class="row intro">
+				    <div class="col-sm-6">
+					<h2 style="color:#37474F" ><strong>Welcome to Phoenix Cinema</strong></h2>
+					<h1>The Best That Suits Your Needs</h1>
+					<p>Phoenix Cinema is a free website for the users to search for movies to get it's details, find for current playing movies in theartre,
+					   search for coming soon movies, watch movie trailers and read movie critics.Users can also add their favourite movie to must watch list for upcoming movies.
+					   </p>
+					</div>
+				     <div class="col-sm-6">
+			              <img src="images/popcorn.png" alt="imagebesideintro"  height="380px" />
+				     </div>
+					 </div>
+                </div>
+
+				<div class="row-sm-6">
+				   <div class="row contact">
+				   <hr>
+				   Contact Us <br/>
+				   52 Edgecumbe Court 10250
+				   Georgetown, Penang.<br/>
+				   Tel: +04123456788<br/>
+				   e-Mail: pheonixcinema@gmail.com
+				   <br/>
+				   <p>site design / logo © 2017 Phoenix Cinema Inc; user contributions licensed under cc by-sa 3.0 with attribution required. rev 2017.11.14.27728</p>
+				   <hr>
+				   </div>
+				</div>
+
+
+            </div>
+
+
+	</div>
+
+	<div class="row footer">
+	    <div class="col-sm-12">
+
+	     <div class="container text-center">
+          <a onclick="" class="btn btn-social-icon btn-lg btn-facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+          <a onclick="" class="btn btn-social-icon btn-lg btn-facebook" href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+          <a onclick="" class="btn btn-social-icon btn-lg btn-facebook" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+          </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

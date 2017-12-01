@@ -1,0 +1,72 @@
+h1 {
+	font-size:30pt;
+}
+
+.nav-stacked {
+	width:200px;
+	height:900px;
+	font-size:15pt;
+	font-family:Georgia;
+} 
+
+.selectcinema {
+	padding-top:35px;
+}
+
+.input-group {
+	padding-top:35px;
+ }
+
+ .header{
+	
+	 text-align:left;
+	 font-family:Georgia;
+	 color:#f2f2f2;
+	 background-color:#1C2331;
+ }
+ 
+ .footer{
+	 background-color:#1C2331;
+	 text-align: center;
+	 color:#f2f2f2;
+	 font-family:Georgia;	
+ }
+ 
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+
+.search {
+	text-align:left;
+    font-family:Georgia;
+    padding-top:50px;
+    padding-left:200px;
+}
+
+
+.intro{
+
+	text-align:center;
+	font-size:17pt;
+	font-family:"Times New Roman", Georgia, cursive;
+    color: #ff3d00; 	
+}
+.contact {
+	font-size:10pt;
+	text-align:center;
+	font-family:Georgia;
+    padding-top:200px;
+	padding-right:150px;
+	color:#37474F;
+	
+}

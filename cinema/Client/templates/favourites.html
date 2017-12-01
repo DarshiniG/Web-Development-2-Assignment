@@ -1,0 +1,25 @@
+<html>
+<h1>Favourites Movie List</h1>
+<body>
+    <table class="table table-striped">
+
+
+  <tr ng-repeat="movie in movies">
+
+    <td><strong>Movie ID </strong><br/>{{movie.id}}</td>
+
+    <td><strong>Movie Title </strong><br/>{{movie.title}}</td>
+    
+    <td><a  ng-click="delete(id)" href="">remove</a></td>
+
+</tr>
+
+      <a class="btn btn-danger" ng-click="deleteAll()">Clear Fav List</a>
+
+</table>
+    
+    
+    
+
+</body>
+</html>

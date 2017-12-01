@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+h1{
+font-family:georgia;
+
+}
+
+h5 {
+font-family:georgia;
+}
+
+
+
+</style>
+
+<h1>Now Showing </h1>
+</head>
+<body>
+
+	
+	
+	<div class= "panel-body">
+		
+			<div ng-repeat="movie in movies">
+			    <div class="row-sm-12">
+				    <div class="col-sm-6 col-md-4">
+                     <div class="thumbnail" height="100px" width="200px">
+					 
+                        <img src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" width="500px" height="300px"/>
+                                <div class="caption">
+                                <h3>{{movie.title}}</h3>
+                                 <h5>Language:{{movie.original_language}}</h5>
+								   
+								 <hr>
+                         <p> <a href="#details/{{movie.id}}" class="btn btn-info" role="button">More Info</a></p>
+                      </div>
+                    </div>
+                     
+				 </div>
+			
+			</div>
+			
+				
+    </div>
+		
+
+</body>
+</html>

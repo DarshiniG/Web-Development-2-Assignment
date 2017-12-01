@@ -1,0 +1,19 @@
+{
+  "name": "api_example",
+  "version": "1.0.0",
+  "description": "simple api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "guhadarshini",
+  "license": "ISC",
+  "dependencies": {
+    "restify": "^4.0.3",
+    "request": "^2.65.0",
+    "csprng": "^0.1.1",
+     "mongodb": "^2.2.33",
+    "mongoose": "4.2.4",
+    "serve-static-restify": "1.0.0"
+  }
+}

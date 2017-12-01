@@ -1,0 +1,32 @@
+<html>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Coming Soon Movies</h3>
+	</div>
+	<div class= "panel-body">
+		<div class="row">
+			<div ng-repeat="movie in movies">
+				<div class="col-md-6">
+					<div class="col-md-6">
+						<h4>{{movie.title}}</h4>
+						<p><strong>Release Date : </strong>{{movie.release_date}}</p>
+						<p>{{movie.overview}}</p>
+						<hr>
+						<a href="#details/{{movie.id}}">View</a>
+					</div>
+					<div class="col-md-6">
+						  <img class="thumbnail" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" width="200px" height="300px"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</html>
+
+
+

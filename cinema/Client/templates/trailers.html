@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Movie Trailers</h3>
+	</div>
+	<div class= "panel-body">
+		<div class="row">
+			<div ng-repeat="movie in movies.items">
+				<div class="col-md-12">
+					<div class="col-md-8">
+						<h4>Title: {{movie.snippet.title}}</h4>
+						<p>Description: {{movie.snippet.description}}</p><br/>
+					
+					
+					<iframe width="420" height="345" src="https://www.youtube.com/embed/"+{{movie.id.videoId}}> </iframe> 
+					
+						<!--"https://www.youtube.com/watch?v=" +"{{movie.id.videoId}}"-->
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</html>
+

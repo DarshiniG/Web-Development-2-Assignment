@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+h3 {
+	font-size:18pt;
+	font-family:"Times New Roman", Georgia, cursive;
+    color: #ff3d00; 	
+}
+
+p {
+  font-family:"Times New Roman", Georgia, cursive;
+  font-size:13pt;
+  text-align:justify;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container-fuild">
+
+<div class="panel panel-default" >
+	<div class="panel-heading">
+		<h2 class="panel-title">Movie Critics</h2>
+	</div>
+	<div class= "panel-body">
+		<div class="row">
+			<div ng-repeat="movie in movies.results">
+				<div class="col-md-12">
+					<div class="col-md-12">
+						<h3><strong>{{movie.display_title}}</strong></h3>
+						<p><strong>Publication Date:</strong> {{movie.publication_date}}<br/>
+						    <strong>Critic Headline:</strong> {{movie.headline}}<br/>
+						    <strong>By:</strong> {{movie.byline}}<br/>
+						    <strong>Summary:</strong> {{movie.summary_short}}</p><br/>
+						<strong>{{movie.link.suggested_link_text}} : </strong><a class="btn btn-info" href="{{movie.link.url}}">Read Article</a>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+h6 {
+    color:#ff3d00;
+    font-family:georgia;
+	font-size:15pt;
+	text-align:right;
+	padding-top:30px;
+
+}
+
+</style>
+<div class="row-sm-12">
+
+<div class="col-sm-5">
+       <h6>Search For Movies Here</h6>
+
+</div>
+
+ <div class="col-sm-5">
+    <div class="input-group">
+      	<input type="text" ng-model="searchTerm" ng-keydown="search($event)" autofocus>
+              	(Quick Search Press F1)
+       </div>
+    </div>
+
+
+
+</div>
+
+</head>
+
+<body>
+
+
+<table class="table table-striped">
+
+
+  <tr ng-repeat="movie in movies">
+
+
+    <td><strong>Movie Name </strong><br/>{{movie.title}}</td>
+
+	<td><strong>Poster </strong><br/><img class="thumbnail" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}"/></td>
+
+    <td><strong>Release Date </strong><br/>{{movie.release_date}}</td>
+
+    <td><strong>Explore </strong><br/> <a href="#details/{{movie.id}}">Details</a></td>
+</tr>
+
+</table>
+<button ng-click='reqPost()'>POST</button>
+
+
+</body>
+
+</html>
